@@ -17,7 +17,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="mt-0 header-title">Wallet all history</h4>
-                            <table class="table table-striped" style="border-collapse: collapse; border-spacing: 0; width: 100%;" id="user_data">
+                            <table class="table table-striped" style="border-collapse: collapse; border-spacing: 0; width: 100%;" id="wallet_data">
                                 <thead>
                                 <tr>
                                     <th>#</th>
@@ -98,7 +98,7 @@
 <?php endforeach;?>
 <script src="<?php echo site_url() ?>assets/js/jquery.min.js"></script>
 <script> 
-    function test($id){
+    function viewWallet($id){
         jQuery.noConflict();
         $('#viewWallet'+$id).modal();
     }
@@ -106,8 +106,7 @@
 
 <script type="text/javascript" language="javascript" >  
  $(document).ready(function(){  
-    // var length = 5;
-      var dataTable = $('#user_data').DataTable({  
+      var dataTable = $('#wallet_data').DataTable({  
            "processing":true,  
            "serverSide":true,  
            "order":[],  
@@ -124,6 +123,5 @@
            ],  
       });  
  });  
-
  
- </script>  
+</script>  

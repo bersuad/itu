@@ -50,7 +50,7 @@
 		}  
 		function make_datatables(){  
 			$this->make_query();  
-			if(7 != -1)  
+			if(10 != -1)  
 			{  
 				$this->db->limit(10, 1);  
 			}  
@@ -65,7 +65,7 @@
 		}       
 		function get_all_data()  
 		{  
-			$this->db->select("*");  
+			$this->db->select(" * ");  
 			$this->db->from($this->table);  
 			return $this->db->count_all_results();  
 		} 
